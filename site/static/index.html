@@ -16,39 +16,64 @@
          />
    </head>
    <body>
-      <header
-         class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-         >
-         <span
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            >
-         <i
-            class="bi bi-list me-2 fs-4"
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <span
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+     <i
+        class="bi bi-list me-2 fs-4"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sidebarOffcanvas"
+        aria-controls="sidebarOffcanvas"
+        aria-label="Toggle menu"
+        ></i>
+     <a href="#">Hugo Book</a>
+     </span>
+    
+        <div class="d-flex align-items-center ms-auto">
+          <button
+            class="btn bi bi-link-45deg fs-5 px-2"
+            title="References"
             data-bs-toggle="offcanvas"
-            data-bs-target="#sidebarOffcanvas"
-            aria-controls="sidebarOffcanvas"
-            aria-label="Toggle menu"
-            ></i>
-         <a href="#">Hugo Book</a>
-         </span>
-         <div id="bookOptionsPane" class="d-flex justify-content-end header-icon">
-            <button
-               class="btn bi bi-link-45deg"
-               title="References"
-               data-bs-toggle="offcanvas"
-               data-bs-target="#referencepanel"
-               aria-controls="referencepanel"
-               ></button>
-            <button
-               class="btn bi bi-camera-reels"
-               title="Videos"
-               ></button>
-            <button
-               class="btn bi bi-clipboard2-check"
-               title="Practice"
-               ></button>
-         </div>
-      </header>
+            data-bs-target="#referencepanel"
+            aria-controls="referencepanel"
+          ></button>
+          
+          <button
+            class="btn bi bi-camera-reels fs-5 px-2"
+            title="Videos"
+          ></button>
+          
+          <button
+            class="btn bi bi-clipboard2-check fs-5 px-2"
+            title="Practice"
+          ></button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="referencepanel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">References</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Reference content goes here.
+      </div>
+    </div>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="referencepanel" aria-labelledby="referencepanelLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="referencepanelLabel">References</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for your reference panel goes here.
+      </div>
+    </div>
+
       <main class="container">
          <div class="row">
           <nav aria-label="breadcrumb">
