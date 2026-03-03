@@ -1,9 +1,9 @@
 ---
 choices:
-  - "cms⁻¹"
-  - "Nkg⁻¹"
-  - "N m²kg⁻¹"
-  - "cm²s⁻²"
+  - "cm s⁻¹"
+  - "N kg⁻¹"
+  - "N m² kg⁻¹"
+  - "m² s⁻²"
 answer:
   - "Nkg⁻¹"
 # explanation: "These are the two primary OOP principles."
